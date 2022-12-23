@@ -1,0 +1,3 @@
+INSERT INTO departments (departmentname, lastname, firstname, patronymic, numberemployees)
+VALUES ('Data mining', (select employees.lastname from employees where experiencelevel = 'Lead' and departmentid = 1),  (select employees.firstname from employees where experiencelevel = 'Lead' and departmentid = 1),  (select employees.patronymic from employees where experiencelevel = 'Lead' and departmentid = 3), 3)
+;

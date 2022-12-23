@@ -1,0 +1,1 @@
+SELECT MAX(employees.salary) FROM employees
